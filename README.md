@@ -1,19 +1,19 @@
-# active-link
+# active-link-to
 
 Framework-independent active navigation matching inspired by [active_link_to](https://github.com/comfy/active_link_to). Zero runtime dependencies. Works in browsers, Node and Bun; includes TypeScript declarations.
 
 ## Installation
 
 ```sh
-npm install active-link
+npm install active-link-to
 # or
-bun add active-link
+bun add active-link-to
 ```
 
 ## Usage
 
 ```js
-import { isActiveLink } from 'active-link';
+import { isActiveLink } from 'active-link-to';
 
 isActiveLink('/admin/users/42/edit?q=alex', '/admin/users'); // true
 isActiveLink('/admin/users', '/admin', 'exclusive');        // false
@@ -39,7 +39,7 @@ Cross-origin and non-HTTP(S) links are inactive. Empty, malformed and non-URL in
 ```svelte
 <script>
   import { page } from '@inertiajs/svelte';
-  import { isActiveLink } from 'active-link';
+  import { isActiveLink } from 'active-link-to';
 
   const active = $derived(isActiveLink(page.url, '/admin/users'));
 </script>

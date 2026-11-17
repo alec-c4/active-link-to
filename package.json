@@ -1,5 +1,5 @@
 {
-  "name": "active-link",
+  "name": "active-link-to",
   "version": "0.1.0",
   "description": "Framework-independent active navigation matching for JavaScript and TypeScript",
   "type": "module",

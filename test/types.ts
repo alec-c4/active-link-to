@@ -1,4 +1,4 @@
-import { isActiveLink, type ActiveLinkMode } from "active-link";
+import { isActiveLink, type ActiveLinkMode } from "active-link-to";
 
 const mode: ActiveLinkMode = "exclusive";
 const active: boolean = isActiveLink(new URL("https://example.com/users"), "/users", mode);
