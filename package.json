@@ -1,0 +1,41 @@
+{
+  "name": "active-link",
+  "version": "0.1.0",
+  "description": "Framework-independent active navigation matching for JavaScript and TypeScript",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "types": "./src/index.d.ts",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "node --test test/index.test.js",
+    "test:bun": "bun test test/index.test.js",
+    "check": "node --check src/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "Alexey Poimtsev <alexey.poimtsev@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "navigation",
+    "active-link",
+    "router",
+    "bun",
+    "svelte",
+    "inertia"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alec-c4/active-link.git"
+  }
+}
