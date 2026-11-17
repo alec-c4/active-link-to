@@ -1,5 +1,8 @@
 # active-link-to
 
+[![CI](https://github.com/alec-c4/active-link-to/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/alec-c4/active-link-to/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/active-link-to)](https://www.npmjs.com/package/active-link-to)
+
 Framework-independent active navigation matching inspired by [active_link_to](https://github.com/comfy/active_link_to). Zero runtime dependencies. Works in browsers, Node and Bun; includes TypeScript declarations.
 
 ## Installation
@@ -52,13 +55,15 @@ Cross-origin and non-HTTP(S) links are inactive. Empty, malformed and non-URL in
 ## Development
 
 ```sh
+npm ci
 npm test
 bun run test:bun
 npm run check
+npm run typecheck
 npm pack --dry-run
 ```
 
-The same test suite runs natively in Node and Bun. No install or compilation step is required. `src/index.js` is the ESM runtime entry point and `src/index.d.ts` supplies TypeScript types. Consumers can bundle the package for browsers.
+The same test suite runs natively in Node and Bun. No compilation step or runtime dependencies are required. TypeScript is a development-only dependency. `src/index.js` is the ESM runtime entry point and `src/index.d.ts` supplies TypeScript types. Consumers can bundle the package for browsers.
 
 ## License
 

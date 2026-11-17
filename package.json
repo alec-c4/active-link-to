@@ -19,7 +19,8 @@
   "scripts": {
     "test": "node --test test/index.test.js",
     "test:bun": "bun test test/index.test.js",
-    "check": "node --check src/index.js"
+    "check": "node --check src/index.js",
+    "typecheck": "tsc --allowJs --checkJs --noEmit --strict --target ES2022 --module NodeNext src/index.js test/types.ts"
   },
   "engines": {
     "node": ">=20"
@@ -37,5 +38,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alec-c4/active-link-to.git"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
   }
 }
