@@ -40,6 +40,6 @@
     "url": "git+https://github.com/alec-c4/active-link-to.git"
   },
   "devDependencies": {
-    "typescript": "^6.0.3"
+    "typescript": "^7.0.2"
   }
 }
